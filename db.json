@@ -1,0 +1,40 @@
+{
+  "notes": [
+    {
+      "id": 1,
+      "body": "wow my first note",
+      "category": "Misc.",
+      "date": "3/28/22"
+    },
+    {
+      "id": 2,
+      "body": "buy eggs, milk, and bread",
+      "category": "Errand",
+      "date": "3/22/22"
+    },
+    {
+      "id": 3,
+      "body": "Dentist appointment @ 3pm",
+      "category": "Reminder",
+      "date": "3/27/22"
+    },
+    {
+      "id": 4,
+      "body": "Study",
+      "category": "Reminder",
+      "date": "3/25/22"
+    },
+    {
+      "body": "all of my passwords for my bank accounts  that each have atleast $400000 on each of them:\nchase password = 123456789\ntd bank password = wordpass\nbank of america password = money",
+      "date": "20/01/2020",
+      "category": "Personal",
+      "id": 5
+    },
+    {
+      "body": "dear diary today i learned how to iterate through arrays and it was pretty dope to be honest",
+      "date": "28/03/2021",
+      "category": "Personal",
+      "id": 6
+    }
+  ]
+}

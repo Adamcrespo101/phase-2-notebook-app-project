@@ -1,38 +1,99 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Ramaraja&display=swap');
+
+* {
+    font-family: 'Ramaraja', serif;
+    font-weight: bold;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+    background-image: url('https://www.designbolts.com/wp-content/uploads/2014/03/Bright-Blue1.jpg');
+    background-repeat: no-repeat;
+    background-size: 100%;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.Note {
+    background-color: #eee45f;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+    background-image: url('http://timvandevall.com/wp-content/uploads/2013/10/Printable-Notebook-Paper-02.jpg') ;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.notes-list{
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
 }
 
-.App-link {
-  color: #61dafb;
+.container{
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 15px;
+    padding-left: 15px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.search-container {
+    height: 100px;
+    text-align: center;
+}
+
+.delete-icon{
+    float: right;
+    cursor: pointer;
+}
+
+.note.new{
+    background-color: rgba(126, 226, 143, 0.781);
+    margin-bottom: 10px;
+    border-radius: 10px;
+    padding: 1rem;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
+}
+
+textarea{
+    border: none;
+    resize: none;
+    background-color: rgba(126, 226, 143, 0.1);
+}
+
+textarea:focus {
+    outline: none;
+}
+
+.save {
+    border-radius: 20px;
+    background-color: lightgray;
+}
+
+
+.save:hover{
+background-color: lightgoldenrodyellow;
+cursor: pointer;
+}
+
+.category-select {
+    margin-left: 20px;
+}
+
+#more-notes{
+    float: left;
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: #eee45f;
+    padding: 10px;
+}
+
+#book {
+    float: right;
+    top: 0px;
 }
