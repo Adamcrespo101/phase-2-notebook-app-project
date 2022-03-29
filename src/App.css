@@ -124,4 +124,13 @@ cursor: pointer;
   .edit-icon{
     padding-left: 30px;
     cursor: pointer;
+    bottom: 0px;
+  }
+
+  .back-btn{
+    float: right;
+    top: 0px;
+    border-radius: 20px;
+    border: solid white 1px;
+    
   }
