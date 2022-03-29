@@ -6,6 +6,7 @@ import { useState, useEffect } from 'react'
 function App() {
   //Categories will include Personal, errands, reminder, misc
   const [notes, setNotes] = useState([])
+  const [search, setSearch] = useState('')
 
   useEffect(() => {
     fetch('http://localhost:3001/notes')
@@ -13,12 +14,12 @@ function App() {
     .then(data => setNotes(data))
   }, [])
 
-
+  const searchedNotes = notes.filter(note => note.body.toLowerCase().includes(search))
   
   return (
     <div className="App">
-      <Searchbar />
-      <NotesList notes={notes} setNotes={setNotes} />
+      <Searchbar search={search} setSearch={setSearch} />
+      <NotesList notes={notes} setNotes={setNotes} searchedNotes={searchedNotes} />
     </div>
   );
 }

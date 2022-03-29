@@ -1,11 +1,16 @@
 
 
-function Searchbar(){
+function Searchbar({search, setSearch}){
+
+        function handleSearch(e){
+            setSearch(e.target.value)
+        }
+
 
     return(
         <div className="search-container">
             <h1 id="more-notes">More-Notes</h1>
-        <input type="text" placeholder="search for a note here..."/>
+        <input type="text" placeholder="search for a note here..." onChange={handleSearch}/>
         <input type="submit" value="🔍"/>
         <select className="category-select">
             <option name="all">All</option>
