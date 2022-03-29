@@ -1,0 +1,72 @@
+{
+  "notes": [
+    {
+      "id": 2,
+      "body": "buy eggs, milk, bread, potato, lunch, dinner",
+      "category": "Errand",
+      "date": "3/22/22"
+    },
+    {
+      "id": 3,
+      "body": "Dentist appointment @ 3pm",
+      "category": "Reminder",
+      "date": "3/27/22"
+    },
+    {
+      "body": "Dear diary, today I learned how to iterate through arrays, but i'm still pretty trash at it. I wonder if my boss from my last job will take me back, prob not though thinking back to how i left things off at my last job. ",
+      "date": "03/28/2022",
+      "category": "Reminder",
+      "id": 4
+    }
+  ],
+  "deleted": [
+    {
+      "id": 1,
+      "body": "wow my first note dddfefc kjbgkvkuvb",
+      "category": "Personal",
+      "date": "3/28/22"
+    },
+    {
+      "body": "dccdscwscswxws",
+      "date": "",
+      "category": "",
+      "id": 10
+    },
+    {
+      "body": "scawsxwsdxswxwaX",
+      "date": "",
+      "category": "Reminder",
+      "id": 11
+    },
+    {
+      "body": "vefefsfsd",
+      "date": "",
+      "category": "",
+      "id": 9
+    },
+    {
+      "body": "New notes to do",
+      "date": "",
+      "category": "Reminder",
+      "id": 6
+    },
+    {
+      "body": "Wow playing around with react is amazing what else can I do",
+      "date": "",
+      "category": "Reminder",
+      "id": 5
+    },
+    {
+      "body": "remember to sleep\n",
+      "date": "",
+      "category": "Errand",
+      "id": 8
+    },
+    {
+      "body": "n elebflefeefdewvweefefefefefefe",
+      "date": "",
+      "category": "Misc.",
+      "id": 7
+    }
+  ]
+}
