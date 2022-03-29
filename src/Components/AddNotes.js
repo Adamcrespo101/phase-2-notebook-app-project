@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 
-function AddNotes({createNote, notes, setNotes}){
+function AddNotes({notes, setNotes}){
 
     const [noteState, setNoteState]= useState({
         body: "",
@@ -48,7 +48,7 @@ function AddNotes({createNote, notes, setNotes}){
                     <option name="misc">Misc.</option>
                 </select>
                 <input type="text" placeholder="enter date DD/MM/YYYY..." name="date" onChange={handleChange} value={noteState.date}/>
-                <img id="book" src="https://i.pinimg.com/originals/66/8a/8c/668a8cccacc792924fa588b4adca8f68.gif" style={{height: "30px", width: "30px"}} />
+                <img id="book" alt="book-animation" src="https://i.pinimg.com/originals/66/8a/8c/668a8cccacc792924fa588b4adca8f68.gif" style={{height: "30px", width: "30px"}} />
                 <button className="save" onClick={saveNote}>Save note</button>
             </div>
         </div>

@@ -13,14 +13,12 @@ function App() {
     .then(data => setNotes(data))
   }, [])
 
-    function createNote({notes}){
-      console.log(notes.body)
-    }
+
   
   return (
     <div className="App">
       <Searchbar />
-      <NotesList notes={notes} createNote={createNote} setNotes={setNotes} />
+      <NotesList notes={notes} setNotes={setNotes} />
     </div>
   );
 }
