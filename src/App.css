@@ -55,6 +55,7 @@ html {
     border-radius: 10px;
     padding: 1rem;
     min-height: 150px;
+    max-height: 150px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -86,12 +87,13 @@ cursor: pointer;
     margin-left: 20px;
 }
 
-#more-notes{
+.more-notes{
     float: left;
     margin-top: 0px;
     border-radius: 10px;
     background-color: #eee45f;
     padding: 10px;
+    
 }
 
 #book {
@@ -109,6 +111,7 @@ cursor: pointer;
   .search-by-cat{
       margin-left: 20px ;
       display: inline-flex;
+
   }
 
   label{
@@ -129,8 +132,31 @@ cursor: pointer;
 
   .back-btn{
     float: right;
-    top: 0px;
+    bottom: 0px;
+    cursor: pointer;
+  }
+
+
+  #filter-cat{
+      border-radius: 15px;
+  }
+
+  .drawing-area {
+    width: 600px;
+    height: 600px;
+    background-color: lightgrey;
+    border: 10px solid black;
+    margin: -8% 23%;
+    z-index: 1000;
+    margin-top: 20px;
     border-radius: 20px;
-    border: solid white 1px;
-    
+  }
+
+  #drawing-mode-header{
+    margin-top: 0px;
+    border-radius: 10px;
+    background-color: #eee45f;
+    padding: 10px;
+    text-align: center;
+    width: 150px;
   }
