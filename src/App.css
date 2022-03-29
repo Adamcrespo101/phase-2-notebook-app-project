@@ -6,7 +6,7 @@
 }
 
 html {
-    background-image: url('https://www.designbolts.com/wp-content/uploads/2014/03/Bright-Blue1.jpg');
+    background-image: url('data:image/jpeg;base64,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');
     background-repeat: no-repeat;
     background-size: 100%;
 }
@@ -21,7 +21,7 @@ html {
     flex-direction: column;
     justify-content: space-between;
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
-    background-image: url('http://timvandevall.com/wp-content/uploads/2013/10/Printable-Notebook-Paper-02.jpg') ;
+    background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAL4AAAEKCAMAAACbhh94AAAAclBMVEX+/5X//5L//5X+/5b//5T//5H+/5T//4524qzZ9J34/5PQ95mh5KoAzr3y+5WY46xK17XK85u685uu8J4v07js/JY117SZ6qVU36/G7aJG1rhj367e+Jdh17Wn7p8n0by166eF3LGH5qi97qN/3q9I1bkszJtdAAADOklEQVR4nO3d6XabMBSF0YskSOeRzgNNW7//KxbROMUkXWnQj5MvPTtejo2Jc8yyxbUQEEGW1QHaOL6S4ys5vpLjKzm+Ej7+gLXEz2jRUfWl60r8QItPaNGTdeSPbknklicG9GorxaCO0Ii89MPxtcgtT0o5X76M9Sv6PSFfTj65s5r76pTNslnd2j5BPs6Q/9w8/rr6bHl7Z/6roTac6hVni66LB2jxDY1b71cF3PLU77ngpZ8Su+K8B2tdNMdXIveyDbWjTd1+tIkzrrloi7do8RANXDR0tWRDI7f7mR0/HF/L8ZXYJRu6k3BpONV11379fIlpXP1M9XqcTqZdPDJePr7+GY/TptWc0+nEzQzj5t9tpm6fbv20y/UqyTjFZ7QoWCkV9Ec3Z3LDGQN6y2J956gztHF8JcfXYQ/JiLr0H6HFiBZv0Mgl23xRf/ja4Fse04EvfcdXIn9ZHOqXxYS1jGF+jBZf0MBbFof54pJNCN/umw586Tu+TGbvfrD076vXnfvVNVd8RYufa+dX75z/253bzd3+pxc30Dt/9J26+fivkdv9cHwtx1fCx1cXXm3AJduy1n2CFt/RwG+ezuP3tRxfyfGV8PHVVct+S/ybtt+Vk1/XPLJn2nWz3W7uedq81krotW4pcY4Wr9HAWxaLtyxqOb6S4yvh46vHc+0X7IpzfgXkA5vVoi0mrnswfv/vXxzuOpdsYo6v5PhKjq90cy/bHVbH76t3mmwTT9HoxyhBw7c8aI6v5PhK+PjqzqY26C2LXYpnaC7ZhFyyKTm+kuMrOb4SPr66q6xJph/AXn0CgDbgzdL9We+STcnxlRxfyfGVyL1s9XRP5F62epbLd2jxHA385ul773Ip5fhKjq/k+Er43Q/UvR371dVuvEeLD2jgkq2Ugm950BxfyfGVHF8JH189oqhJHy/Q4iUa+CgZy74raI6v5PhKjq+Ej6/evNkG3FFSxUeww4F+YnL1WMb9cnLJJuX4So6v5PhK6PH79eBO6tV+G3Yv24F+jBL1G3i/cMmm5fhKjq/k+EqZvHEolRyv0OgnJlePB2xDHsdZj8OM5vhKjq/k+EqOr+T4So6v5PhK+Rc2/BwhvZ0awwAAAABJRU5ErkJggg==') ;
 }
 
 .notes-list{
@@ -41,6 +41,7 @@ html {
 .search-container {
     height: 100px;
     text-align: center;
+    
 }
 
 .delete-icon{
@@ -49,7 +50,7 @@ html {
 }
 
 .note.new{
-    background-color: rgba(126, 226, 143, 0.781);
+    background-color: lightblue;
     margin-bottom: 10px;
     border-radius: 10px;
     padding: 1rem;
@@ -63,7 +64,7 @@ html {
 textarea{
     border: none;
     resize: none;
-    background-color: rgba(126, 226, 143, 0.1);
+    background-color: lightblue;
 }
 
 textarea:focus {
@@ -96,4 +97,31 @@ cursor: pointer;
 #book {
     float: right;
     top: 0px;
+    border-radius: 20px;
+    border: solid white 1px;
+    
 }
+
+.note-footer {
+    align-items: center;
+    }
+
+  .search-by-cat{
+      margin-left: 20px ;
+      display: inline-flex;
+  }
+
+  label{
+    border-radius: 10px;
+    background-color: #eee45f;
+    padding: 10px;
+  }
+
+  input, select {
+      border-radius: 10px;
+  }
+
+  .edit-icon{
+    padding-left: 30px;
+    cursor: pointer;
+  }

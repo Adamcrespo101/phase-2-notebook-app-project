@@ -12,6 +12,8 @@ function Searchbar({search, setSearch}){
             <h1 id="more-notes">More-Notes</h1>
         <input type="text" placeholder="search for a note here..." onChange={handleSearch}/>
         <input type="submit" value="🔍"/>
+        <div className="search-by-cat">
+        <label>Search By Category:</label>
         <select className="category-select">
             <option name="all">All</option>
             <option name="reminder">Reminder</option>
@@ -19,6 +21,7 @@ function Searchbar({search, setSearch}){
             <option name="errand">Errand</option>
             <option name="misc">Misc.</option>
         </select>
+        </div>
         </div>
     )
 }

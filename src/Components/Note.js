@@ -18,6 +18,7 @@ function Note({date, body, category, id, notes, setNotes}){
             <div className="note-footer">
                 <small>Category: {category} </small>
                 <small>| Date: {date}</small>
+                <small className="edit-icon">✏️</small>
                 <small className="delete-icon" onClick={deleteNote}>🗑️</small>
                 
             </div>

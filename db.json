@@ -19,10 +19,16 @@
       "date": "3/27/22"
     },
     {
-      "body": "Dear diary, today I learned how to iterate through arrays, but i'm still pretty trash at it. I wonder if my boss from my last job will take me back, prob not though thinking back to how i left things off at my last job. ",
+      "body": "Dear diary, today I learned how to iterate through arrays, but i'm still pretty trash at it. I wonder if my boss from my last job will take me back, prob not though thinking back to how i left things off. ",
       "date": "03/28/2022",
       "category": "Personal",
       "id": 4
+    },
+    {
+      "body": "important bank account passwords that have alot of money on them:\nchase: wordpass\ntd bank : drowssap\nbank of america: password",
+      "date": "3/29/2022",
+      "category": "Misc.",
+      "id": 5
     }
   ]
 }

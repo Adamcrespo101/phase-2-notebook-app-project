@@ -4,7 +4,7 @@ import Searchbar from "./Components/Searchbar";
 import { useState, useEffect } from 'react'
 
 function App() {
-  //Categories will include Personal, errands, reminder, misc
+  //deliverables for march 29th - click to edit each note, category filter, more styling 
   const [notes, setNotes] = useState([])
   const [search, setSearch] = useState('')
 

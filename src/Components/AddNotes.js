@@ -49,7 +49,7 @@ function AddNotes({notes, setNotes}){
                 </select>
                 <input type="text" placeholder="enter date MM/DD/YYYY..." name="date" onChange={handleChange} value={noteState.date}/>
                 <img id="book" alt="book-animation" src="https://i.pinimg.com/originals/66/8a/8c/668a8cccacc792924fa588b4adca8f68.gif" style={{height: "30px", width: "30px"}} />
-                <button className="save" onClick={saveNote}>Save note</button>
+                <button className="save" onClick={saveNote}>Save</button>
             </div>
         </div>
     )
