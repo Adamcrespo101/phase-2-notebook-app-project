@@ -3,21 +3,27 @@ import { useState } from 'react'
 
 function AddNotes({notes, setNotes}){
 
+    const lastModified = new Date().toLocaleDateString("en-GB",{
+        hour: "2-digit",
+        minute: "2-digit"
+    })
+    
+
     const [noteState, setNoteState]= useState({
         body: "",
-        date: "",
+        date: lastModified,
         category: ""
         
     })
   
     function handleChange(e){
-        setNoteState({...noteState, [e.target.name]: e.target.value})
+        setNoteState({...noteState, [e.target.name]: e.target.value, date: lastModified})
     }
 
     function saveNote (){
         const newNote = {
             body: noteState.body,
-            date: noteState.date,
+            date: lastModified,
             category: noteState.category
         }
         fetch('http://localhost:3001/notes', {
@@ -32,7 +38,7 @@ function AddNotes({notes, setNotes}){
         setNoteState({
             body: "",
             category: "",
-            date: ""
+            date: lastModified
         })
     }
 
@@ -47,7 +53,7 @@ function AddNotes({notes, setNotes}){
                     <option name="errand">Errand</option>
                     <option name="misc">Misc.</option>
                 </select>
-                <input type="text" placeholder="enter date MM/DD/YYYY..." name="date" onChange={handleChange} value={noteState.date}/>
+                {/* <input type="text" placeholder="enter date MM/DD/YYYY..." name="date" onChange={handleChange} value={noteState.date}/> */}
                 {/* <span>{Date.UTC()}</span> */}
                 <img id="book" alt="book-animation" src="https://i.pinimg.com/originals/66/8a/8c/668a8cccacc792924fa588b4adca8f68.gif" style={{height: "30px", width: "30px"}} />
                 <button className="save" onClick={saveNote}>Save note</button>

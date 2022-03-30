@@ -2,12 +2,12 @@ import React from 'react'
 import {useEffect} from 'react'
 import DeletedNotes from './DeletedNotes'
 
-function DeletedFiles({setDeletedNotes, deletedNotes}) {
-    console.log(deletedNotes)
+function DeletedFiles({setDeletedNotes, deletedNotes, setNotes, notes}) {
+    
 
   return (
     <div>{deletedNotes.map(dn => {
-        return <DeletedNotes key={dn.id} dn={dn}/>
+        return <DeletedNotes key={dn.id} dn={dn} deletedNotes={deletedNotes} setDeletedNotes={setDeletedNotes} setNotes={setNotes} notes={notes}/>
     })}</div>
   )
 }

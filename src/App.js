@@ -11,8 +11,7 @@ function App() {
   const [cat, setCat] = useState({category: 'All'})
   const [state, setState] = useState(true)
   const [deletedNotes, setDeletedNotes] = useState([])
-  console.log(state)
-  console.log(deletedNotes)
+  
 
     function toggleDel(e){
     setState(prev => !prev)
@@ -46,11 +45,12 @@ function App() {
   }, [])
 
   const searchedNotes = notes.filter(note => note.body.toLowerCase().includes(search.toLowerCase()))
+ 
   
   return (
     <div className="App">
       <Searchbar setSearch={setSearch} setCat={setCat} handlefetch={handlefetch} notes={searchedNotes} toggleDel={toggleDel} state={state} />
-      {state ? <NotesList notes={searchedNotes} setNotes={setNotes}/> : <DeletedFiles setDeletedNotes={setDeletedNotes} deletedNotes={deletedNotes} />}
+      {state ? <NotesList notes={searchedNotes} setNotes={setNotes}/> : <DeletedFiles setDeletedNotes={setDeletedNotes} deletedNotes={deletedNotes} setNotes={setNotes} notes={notes} />}
       {/* <NotesList notes={searchedNotes} setNotes={setNotes}/> */}
     </div>
   );

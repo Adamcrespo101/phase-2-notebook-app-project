@@ -5,6 +5,12 @@ function Note({id, notes, setNotes, note,}){
     const [patchN, setPatchN] = useState()
 
 
+    const lastModified = new Date().toLocaleDateString("en-GB",{
+        hour: "2-digit",
+        minute: "2-digit"
+    })
+
+
     
     function deleteNote (){
         fetch(`http://localhost:3001/deleted`, {
@@ -30,13 +36,15 @@ function Note({id, notes, setNotes, note,}){
             method: 'PATCH',
             body: JSON.stringify({  
                 body: note.body,
-                category: note.category
+                category: note.category,
+                date: lastModified
           }),
           headers: {
           'Content-Type': 'application/json'
           },
           })
           .then(res => res.json())
+          setNotes([...notes, {...note, date: lastModified}])
           changeclass()
 
       }
@@ -44,6 +52,7 @@ function Note({id, notes, setNotes, note,}){
 
       function changeclass(){
           setClassState(prev => !prev)
+
       }
 
 

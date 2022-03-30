@@ -26,16 +26,16 @@ html {
 
 
 .deleted {
-    background-color: #a5a496;
+    background-color: #eee45f;
     margin-bottom: 10px;
     border-radius: 10px;
-    padding: 2rem;
-    min-height: 20px;
+    padding: 1rem;
+    min-height: 150px;
     display: flex;
-    flex-direction: column row-reverse;
+    flex-direction: column;
     justify-content: space-between;
     box-shadow: 5px 5px 10px 2px rgba(0,0,0,.8);
-    background-image: url('http://timvandevall.com/wp-content/uploads/2013/10/Printable-Notebook-Paper-02.jpg') ;
+    background-image: url('https://media.istockphoto.com/photos/crumpled-yellow-paper-texture-picture-id146886947') ;
 }
 
 
