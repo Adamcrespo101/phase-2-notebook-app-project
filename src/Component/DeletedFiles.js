@@ -6,7 +6,8 @@ function DeletedFiles({setDeletedNotes, deletedNotes, setNotes, notes}) {
     
 
   return (
-    <div>{deletedNotes.map(dn => {
+    <div className="notes-list">
+      {deletedNotes.map(dn => {
         return <DeletedNotes key={dn.id} dn={dn} deletedNotes={deletedNotes} setDeletedNotes={setDeletedNotes} setNotes={setNotes} notes={notes}/>
     })}</div>
   )

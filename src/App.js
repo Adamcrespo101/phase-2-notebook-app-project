@@ -3,6 +3,9 @@ import NotesList from './Component/NotesList';
 import Searchbar from './Component/Searchbar';
 import { useState, useEffect } from 'react'
 import DeletedFiles from './Component/DeletedFiles';
+import uuid from 'react-uuid'
+
+
 
 function App() {
   //Categories will include Personal, errands, reminder, misc
@@ -20,7 +23,7 @@ function App() {
       .then(res => res.json())
       .then(data => setDeletedNotes(data))
     }
-    }
+      }
   
  
  
@@ -45,12 +48,13 @@ function App() {
   }, [])
 
   const searchedNotes = notes.filter(note => note.body.toLowerCase().includes(search.toLowerCase()))
+  const searchdeleted = deletedNotes.filter(note => note.body.toLowerCase().includes(search.toLowerCase()))
  
   
   return (
     <div className="App">
       <Searchbar setSearch={setSearch} setCat={setCat} handlefetch={handlefetch} notes={searchedNotes} toggleDel={toggleDel} state={state} />
-      {state ? <NotesList notes={searchedNotes} setNotes={setNotes}/> : <DeletedFiles setDeletedNotes={setDeletedNotes} deletedNotes={deletedNotes} setNotes={setNotes} notes={notes} />}
+      {state ? <NotesList notes={searchedNotes} setNotes={setNotes}/> : <DeletedFiles setDeletedNotes={setDeletedNotes} deletedNotes={searchdeleted} setNotes={setNotes} notes={notes} />}
       {/* <NotesList notes={searchedNotes} setNotes={setNotes}/> */}
     </div>
   );

@@ -2,89 +2,119 @@
   "notes": [
     {
       "id": 2,
-      "body": "buy eggs, milk, bread, potato, lunch, dinnergrwggrgrwgrgegewdgf",
+      "body": "number 16\nhope this works",
       "category": "Reminder",
-      "date": "30/03/2022, 11:55"
+      "date": "30/03/2022, 14:49:36"
     },
     {
-      "body": "dvtg5rgregegfwe fgrfgrwgwefewfefef",
-      "date": "30/03/2022, 11:32",
+      "id": 3,
+      "body": "number 14\nnow it should work",
+      "category": "Reminder",
+      "date": "30/03/2022, 14:49:39"
+    },
+    {
+      "body": "number 23 ukblubj",
+      "date": "31/03/2022, 09:08:37",
       "category": "Personal",
-      "id": 13
+      "id": 21
     },
     {
-      "body": "New notes to do new time",
-      "date": "30/03/2022, 11:54",
-      "category": "Reminder",
-      "id": 6
-    },
-    {
-      "body": "ngndgbdfbdfbfdbf",
-      "date": "30/03/2022, 11:01",
+      "body": "number 13 fhnmgjmjg",
+      "date": "31/03/2022, 09:08:37",
       "category": "",
-      "id": 12
+      "id": 19
     },
     {
-      "id": 1,
-      "body": "wow my first note dddfefc kjbgkvkuvb dsfbvfvsfbvsd",
-      "category": "Personal",
-      "date": "30/03/2022, 11:01"
-    },
-    {
-      "body": "Dear diary, today I learned how to iterate through arrays, but i'm still pretty trash at it. I wonder if my boss from my last job will take me back, prob not though thinking back to how i left things off at my last job.  haha\nhaha",
-      "date": "30/03/2022, 11:24",
-      "category": "Reminder",
-      "id": 4
-    },
-    {
-      "body": "Wow playing around with react is amazing what else can I do",
-      "date": "30/03/2022, 11:01",
+      "body": "number 3  ",
+      "date": "31/03/2022, 09:08:38",
       "category": "Reminder",
       "id": 5
     },
     {
-      "body": "dccdscwscswxwsgtrgreggrgrgrgrgrfxbrgrgersgve",
-      "date": "30/03/2022, 11:26",
+      "body": "number 12 ",
+      "date": "31/03/2022, 09:08:39",
+      "category": "Reminder",
+      "id": 17
+    },
+    {
+      "body": "number 11 updating 11 mmkhk",
+      "date": "31/03/2022, 09:10:18",
+      "category": "Personal",
+      "id": 13
+    },
+    {
+      "body": "number 4 ",
+      "date": "31/03/2022, 09:31:36",
+      "category": "",
+      "id": 12
+    },
+    {
+      "body": "number 9 something dont crash",
+      "date": "31/03/2022, 09:31:37",
       "category": "Personal",
       "id": 10
     },
     {
-      "id": 3,
-      "body": "Dentist appointment @ 3pm \nand at 9 bvjvbkbkjbkj",
-      "category": "Errand",
-      "date": "30/03/2022, 11:01"
-    },
-    {
-      "body": "remember to sleep\n",
-      "date": "30/03/2022, 11:25",
-      "category": "Misc.",
-      "id": 8
-    },
-    {
-      "body": "vefefsfsdgjccfjghtgerwgrwgwregfewfewf",
-      "date": "30/03/2022, 11:35",
+      "body": "number 2 please update",
+      "date": "31/03/2022, 09:31:41",
       "category": "Reminder",
-      "id": 9
+      "id": 18
     },
     {
-      "body": "bngfbfdbfsbxc",
-      "date": "30/03/2022, 11:25",
-      "category": "Errand",
-      "id": 14
-    },
-    {
-      "body": "bjlb b,hfj c ddxdx dcdcdcefefefqwd",
-      "date": "30/03/2022, 11:26",
-      "category": "Misc.",
+      "body": "number 7",
+      "date": "31/03/2022, 09:47:07",
+      "category": "Reminder",
       "id": 7
+    },
+    {
+      "body": "number 15 nice",
+      "date": "31/03/2022, 09:45:39",
+      "category": "",
+      "id": 20
+    },
+    {
+      "body": "number 25",
+      "date": "31/03/2022, 12:31:23",
+      "category": "Misc.",
+      "id": 22
+    },
+    {
+      "body": "number 30",
+      "date": "31/03/2022, 10:40:46",
+      "category": "Reminder",
+      "id": 23
     }
   ],
   "deleted": [
     {
-      "body": "scawsxwsdxswxwaXdcadcadcad",
-      "date": "30/03/2022, 11:36",
+      "body": "number 6 okay jhl",
+      "date": "31/03/2022, 09:08:38",
       "category": "Personal",
+      "id": "db05672-4617-e367-3dde-871c3f4a0d3"
+    },
+    {
+      "body": "Number 17 bfdbbf\n",
+      "date": "31/03/2022, 10:39:50",
+      "category": "Reminder",
+      "id": 6
+    },
+    {
+      "body": "number 1 ",
+      "date": "31/03/2022, 10:39:05",
+      "category": "Reminder",
+      "id": 15
+    },
+    {
+      "body": "number 18",
+      "date": "31/03/2022, 10:37:15",
+      "category": "Reminder",
       "id": 11
+    },
+    {
+      "body": "number 8   bgyfjfvkgvku",
+      "date": "31/03/2022, 09:53:15",
+      "category": "Personal",
+      "id": 14
     }
   ]
 }

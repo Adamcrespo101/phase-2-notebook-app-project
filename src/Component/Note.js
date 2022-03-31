@@ -1,13 +1,15 @@
 import {useState} from 'react'
+import uuid from 'react-uuid'
 
 function Note({id, notes, setNotes, note,}){
     const [classState, setClassState] = useState(true)
-    const [patchN, setPatchN] = useState()
+    
 
 
     const lastModified = new Date().toLocaleDateString("en-GB",{
         hour: "2-digit",
-        minute: "2-digit"
+        minute: "2-digit",
+        second: "2-digit"
     })
 
 
@@ -28,8 +30,6 @@ function Note({id, notes, setNotes, note,}){
         setNotes(deletedNote)
       }
 
-    
-
 
       function patchNotes(){
           fetch(`http://localhost:3001/notes/${id}`,{
@@ -44,15 +44,18 @@ function Note({id, notes, setNotes, note,}){
           },
           })
           .then(res => res.json())
-          setNotes([...notes, {...note, date: lastModified}])
+          .then(setNotes(notes.map(n => {
+              if(n === note){
+                  return {...n, date: lastModified}
+              }
+              else{return n}
+          })))
           changeclass()
-
       }
 
 
       function changeclass(){
           setClassState(prev => !prev)
-
       }
 
 
@@ -76,7 +79,7 @@ function Note({id, notes, setNotes, note,}){
 
 
 
-        <div className= 'note new' >
+        <div className= 'note-new modal' >
         <textarea
         value={note.body}
         onChange={(e)=> setNotes(notes.map(n => {
@@ -100,8 +103,9 @@ function Note({id, notes, setNotes, note,}){
                     <option name="errand">Errand</option>
                     <option name="misc">Misc.</option>
                 </select>
+          <small className='edit-icon' onClick={patchNotes}>🆕</small>
           <small className="delete-icon" onClick={deleteNote}>🗑️</small>
-          <small className='edit-icon' onClick={patchNotes}>🔙</small>
+          <small className="delete-icon" onClick={changeclass}>🔙</small>
            </div>
         </div>
 
