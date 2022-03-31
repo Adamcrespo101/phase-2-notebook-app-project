@@ -5,7 +5,8 @@ function AddNotes({notes, setNotes}){
 
     const lastModified = new Date().toLocaleDateString("en-GB",{
         hour: "2-digit",
-        minute: "2-digit"
+        minute: "2-digit",
+        second: "2-digit"
     })
     
 
@@ -43,7 +44,7 @@ function AddNotes({notes, setNotes}){
     }
 
     return(
-        <div className="note new">
+        <div className="note-new " >
             <textarea rows="8" columns="10" placeholder="enter your note here..." name="body" onChange={handleChange} value={noteState.body}></textarea>
             <div className="note-footer">
                 <select className="category-select" name="category" onChange={handleChange} value={noteState.category}>
@@ -53,8 +54,6 @@ function AddNotes({notes, setNotes}){
                     <option name="errand">Errand</option>
                     <option name="misc">Misc.</option>
                 </select>
-                {/* <input type="text" placeholder="enter date MM/DD/YYYY..." name="date" onChange={handleChange} value={noteState.date}/> */}
-                {/* <span>{Date.UTC()}</span> */}
                 <img id="book" alt="book-animation" src="https://i.pinimg.com/originals/66/8a/8c/668a8cccacc792924fa588b4adca8f68.gif" style={{height: "30px", width: "30px"}} />
                 <button className="save" onClick={saveNote}>Save note</button>
             </div>

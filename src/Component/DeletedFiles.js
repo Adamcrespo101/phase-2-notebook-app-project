@@ -1,5 +1,4 @@
 import React from 'react'
-import {useEffect} from 'react'
 import DeletedNotes from './DeletedNotes'
 
 function DeletedFiles({setDeletedNotes, deletedNotes, setNotes, notes}) {
