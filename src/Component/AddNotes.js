@@ -3,7 +3,16 @@ import { useState } from 'react'
 
 function AddNotes({notes, setNotes}){
 
-    const lastModified = new Date().toLocaleDateString("en-GB",{
+    const [modal, setModal] = useState(false)
+
+    function handleModal () {
+        setModal(prev => !prev)
+        
+
+    }
+
+    const lastModified = new Date().toLocaleDateString("en-US",{
+        hour12: false,
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit"
@@ -41,10 +50,11 @@ function AddNotes({notes, setNotes}){
             category: "",
             date: lastModified
         })
+        setModal(false)
     }
 
     return(
-        <div className="note-new " >
+        <div  className={!modal ? "note-new" : "note-new modal"} >
             <textarea rows="8" columns="10" placeholder="enter your note here..." name="body" onChange={handleChange} value={noteState.body}></textarea>
             <div className="note-footer">
                 <select className="category-select" name="category" onChange={handleChange} value={noteState.category}>
@@ -54,8 +64,8 @@ function AddNotes({notes, setNotes}){
                     <option name="errand">Errand</option>
                     <option name="misc">Misc.</option>
                 </select>
-                <img id="book" alt="book-animation" src="https://i.pinimg.com/originals/66/8a/8c/668a8cccacc792924fa588b4adca8f68.gif" style={{height: "30px", width: "30px"}} />
                 <button className="save" onClick={saveNote}>Save note</button>
+                <img id="book" alt="book-animation" src="https://i.pinimg.com/originals/66/8a/8c/668a8cccacc792924fa588b4adca8f68.gif" style={{height: "30px", width: "30px"}} onClick={handleModal} />
             </div>
         </div>
     )

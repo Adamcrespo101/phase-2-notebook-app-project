@@ -6,7 +6,8 @@ function Note({id, notes, setNotes, note,}){
     
 
 
-    const lastModified = new Date().toLocaleDateString("en-GB",{
+    const lastModified = new Date().toLocaleDateString("en-US",{
+        hour12: false,
         hour: "2-digit",
         minute: "2-digit",
         second: "2-digit"
@@ -68,8 +69,8 @@ function Note({id, notes, setNotes, note,}){
                 <div className="note-footer">
                 <small>Category: {note.category} </small>
                 <small>| Date: {note.date}</small>
-                <small className="delete-icon" onClick={deleteNote}>🗑️</small>
                 <small className='edit-icon ' onClick={changeclass}>✏️</small>
+                <small className="delete-icon" onClick={deleteNote}>🗑️</small>
                  </div>
         </div>
 
@@ -103,9 +104,9 @@ function Note({id, notes, setNotes, note,}){
                     <option name="errand">Errand</option>
                     <option name="misc">Misc.</option>
                 </select>
-          <small className='edit-icon' onClick={patchNotes}>🆕</small>
-          <small className="delete-icon" onClick={deleteNote}>🗑️</small>
-          <small className="delete-icon" onClick={changeclass}>🔙</small>
+          <p className='edit-icon' onClick={patchNotes}>💾</p>
+          <p className="delete-icon" onClick={deleteNote}>🗑️</p>
+          <p className="delete-icon" onClick={changeclass}>🔙</p>
            </div>
         </div>
 

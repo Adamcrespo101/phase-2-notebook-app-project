@@ -1,16 +1,48 @@
 {
   "notes": [
     {
-      "id": 2,
-      "body": "number 16\nhope this works",
+      "body": "dentist @  5AM",
+      "date": "4/1/2022, 10:20:01 AM",
       "category": "Reminder",
-      "date": "30/03/2022, 14:49:36"
+      "id": 25
     },
     {
-      "id": 3,
-      "body": "number 14\nnow it should work",
+      "body": "picnic on the beach with the boys ",
+      "date": "4/1/2022, 14:01:42",
       "category": "Reminder",
-      "date": "30/03/2022, 14:49:39"
+      "id": 26
+    },
+    {
+      "body": "***LOOK FOR WORK***",
+      "date": "4/1/2022, 14:02:08",
+      "category": "Reminder",
+      "id": 27
+    },
+    {
+      "body": "lost my laundry",
+      "date": "4/1/2022, 14:41:10",
+      "category": "Personal",
+      "id": 28
+    },
+    {
+      "body": "kev is a funny guy",
+      "date": "4/1/2022, 14:39:51",
+      "category": "Misc.",
+      "id": 29
+    },
+    {
+      "body": "pick up some groceriesa",
+      "date": "4/1/2022, 14:42:41",
+      "category": "Errand",
+      "id": 24
+    }
+  ],
+  "deleted": [
+    {
+      "body": "number 4 ",
+      "date": "31/03/2022, 09:31:36",
+      "category": "",
+      "id": 12
     },
     {
       "body": "number 23 ukblubj",
@@ -19,102 +51,40 @@
       "id": 21
     },
     {
-      "body": "number 13 fhnmgjmjg",
-      "date": "31/03/2022, 09:08:37",
+      "body": "number 30",
+      "date": "01/04/2022, 10:12:26",
+      "category": "Reminder",
+      "id": 23
+    },
+    {
+      "body": "",
+      "date": "01/04/2022, 10:12:21",
       "category": "",
-      "id": 19
-    },
-    {
-      "body": "number 3  ",
-      "date": "31/03/2022, 09:08:38",
-      "category": "Reminder",
-      "id": 5
-    },
-    {
-      "body": "number 12 ",
-      "date": "31/03/2022, 09:08:39",
-      "category": "Reminder",
-      "id": 17
-    },
-    {
-      "body": "number 11 updating 11 mmkhk",
-      "date": "31/03/2022, 09:10:18",
-      "category": "Personal",
-      "id": 13
-    },
-    {
-      "body": "number 4 ",
-      "date": "31/03/2022, 09:31:36",
-      "category": "",
-      "id": 12
-    },
-    {
-      "body": "number 9 something dont crash",
-      "date": "31/03/2022, 09:31:37",
-      "category": "Personal",
-      "id": 10
-    },
-    {
-      "body": "number 2 please update",
-      "date": "31/03/2022, 09:31:41",
-      "category": "Reminder",
-      "id": 18
-    },
-    {
-      "body": "number 7",
-      "date": "31/03/2022, 09:47:07",
-      "category": "Reminder",
-      "id": 7
+      "id": 26
     },
     {
       "body": "number 15 nice",
-      "date": "31/03/2022, 09:45:39",
-      "category": "",
+      "date": "01/04/2022, 10:11:04",
+      "category": "Personal",
       "id": 20
     },
     {
-      "body": "number 25",
-      "date": "31/03/2022, 12:31:23",
-      "category": "Misc.",
-      "id": 22
-    },
-    {
-      "body": "number 30",
-      "date": "31/03/2022, 10:40:46",
+      "body": "",
+      "date": "4/1/2022, 01:54:40 PM",
       "category": "Reminder",
-      "id": 23
-    }
-  ],
-  "deleted": [
-    {
-      "body": "number 6 okay jhl",
-      "date": "31/03/2022, 09:08:38",
-      "category": "Personal",
-      "id": "db05672-4617-e367-3dde-871c3f4a0d3"
+      "id": 27
     },
     {
-      "body": "Number 17 bfdbbf\n",
-      "date": "31/03/2022, 10:39:50",
+      "body": "",
+      "date": "4/1/2022, 13:59:09",
+      "category": "",
+      "id": 29
+    },
+    {
+      "body": "number 3  ",
+      "date": "4/1/2022, 19:25:05",
       "category": "Reminder",
-      "id": 6
-    },
-    {
-      "body": "number 1 ",
-      "date": "31/03/2022, 10:39:05",
-      "category": "Reminder",
-      "id": 15
-    },
-    {
-      "body": "number 18",
-      "date": "31/03/2022, 10:37:15",
-      "category": "Reminder",
-      "id": 11
-    },
-    {
-      "body": "number 8   bgyfjfvkgvku",
-      "date": "31/03/2022, 09:53:15",
-      "category": "Personal",
-      "id": 14
+      "id": 5
     }
   ]
 }

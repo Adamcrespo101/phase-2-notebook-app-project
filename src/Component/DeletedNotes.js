@@ -3,7 +3,8 @@ import React from 'react'
 
 function DeletedNotes({dn, deletedNotes, setDeletedNotes, setNotes, notes}) {
 
-  const lastModified = new Date().toLocaleDateString("en-GB",{
+  const lastModified = new Date().toLocaleDateString("en-US",{
+    hour12: false,
     hour: "2-digit",
     minute: "2-digit",
     second: "2-digit"
@@ -42,7 +43,7 @@ function DeletedNotes({dn, deletedNotes, setDeletedNotes, setNotes, notes}) {
                 <small>Category: {dn.category} </small>
                 <small>| Date: {dn.date} </small>
                 <small className="delete-icon" onClick={removenotes}>♻️</small>
-                <small className='edit-icon ' onClick={destroyforever}>🗑️</small>
+                <small className='edit-icon ' onClick={destroyforever}>☠️</small>
                  </div>
         </div>
   )

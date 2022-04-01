@@ -4,6 +4,9 @@ import Searchbar from './Component/Searchbar';
 import { useState, useEffect } from 'react'
 import DeletedFiles from './Component/DeletedFiles';
 import uuid from 'react-uuid'
+import DrawingArea from './Component/DrawingArea';
+
+
 
 
 
@@ -14,6 +17,11 @@ function App() {
   const [cat, setCat] = useState({category: 'All'})
   const [state, setState] = useState(true)
   const [deletedNotes, setDeletedNotes] = useState([])
+  const [drawingMode, setDrawingMode] = useState(false)
+
+  function handleMode(){
+    setDrawingMode(prev => !prev)
+  }
   
 
     function toggleDel(e){
@@ -53,11 +61,23 @@ function App() {
   
   return (
     <div className="App">
-      <Searchbar setSearch={setSearch} setCat={setCat} handlefetch={handlefetch} notes={searchedNotes} toggleDel={toggleDel} state={state} />
-      {state ? <NotesList notes={searchedNotes} setNotes={setNotes}/> : <DeletedFiles setDeletedNotes={setDeletedNotes} deletedNotes={searchdeleted} setNotes={setNotes} notes={notes} />}
-      {/* <NotesList notes={searchedNotes} setNotes={setNotes}/> */}
+      <Searchbar setSearch={setSearch} handleMode={handleMode} setCat={setCat} handlefetch={handlefetch} notes={searchedNotes} toggleDel={toggleDel} state={state} />
+      
+      {
+      
+      !state ? <DeletedFiles setDeletedNotes={setDeletedNotes} deletedNotes={searchdeleted} setNotes={setNotes} notes={notes} /> 
+      
+      : drawingMode && state ? <DrawingArea/> 
+     
+     :  <NotesList notes={searchedNotes} setNotes={setNotes}/>
+     
+     }
     </div>
   );
 }
+
+{/*!state ?  <DeletedFiles setDeletedNotes={setDeletedNotes} deletedNotes={deletedNotes} setNotes={setNotes} notes={notes} /> : 
+       mode ?  <DrawingArea /> : <NotesList notes={searchedNotes} setNotes={setNotes}/>
+  */}
 
 export default App;
