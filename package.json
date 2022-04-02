@@ -1,6 +1,7 @@
 {
   "name": "phase-2-notebook-app-project",
   "version": "0.1.0",
+  "homepage": "https://adamcrespo101.github.io/phase-2-notebook-app-project/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.3",
