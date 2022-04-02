@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/static/css/main.42e63d09.css",
-    "main.js": "/static/js/main.9a0d44cb.js",
-    "index.html": "/index.html",
-    "main.42e63d09.css.map": "/static/css/main.42e63d09.css.map",
-    "main.9a0d44cb.js.map": "/static/js/main.9a0d44cb.js.map"
+    "main.css": "/phase-2-notebook-app-project/static/css/main.42e63d09.css",
+    "main.js": "/phase-2-notebook-app-project/static/js/main.9a0d44cb.js",
+    "index.html": "/phase-2-notebook-app-project/index.html",
+    "main.42e63d09.css.map": "/phase-2-notebook-app-project/static/css/main.42e63d09.css.map",
+    "main.9a0d44cb.js.map": "/phase-2-notebook-app-project/static/js/main.9a0d44cb.js.map"
   },
   "entrypoints": [
     "static/css/main.42e63d09.css",
